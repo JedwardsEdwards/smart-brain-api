@@ -9,7 +9,6 @@ const handleAPICall = (req, res) => {
         .predict("f76196b43bbd45c99b4f3cd8e8b40a8a", req.body.input)
         .then(data => {
             res.json(data);
-            console.log(data);
         })
         .catch(err => res.status(400).json('unable to work with API'));
 };
